@@ -1,0 +1,27 @@
+Source: node-deep-extend
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Thorsten Alteholz <debian@alteholz.de>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-buildinfo,
+               mocha,
+               nodejs,
+               node-should,
+               dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-deep-extend
+Vcs-Git: https://salsa.debian.org/js-team/node-deep-extend.git
+Homepage: https://github.com/unclechu/node-deep-extend
+Rules-Requires-Root: no
+
+Package: node-deep-extend
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         nodejs
+Description: Recursive object extending
+ This module does a recursive object extending.
+ .
+ Node.js is an event-based server-side JavaScript engine.
